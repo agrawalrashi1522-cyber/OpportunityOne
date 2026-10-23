@@ -1,0 +1,909 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "opportunity one",
+      "intents": [
+        {
+          "name": "GenderIntent",
+          "slots": [
+            {
+              "name": "gender",
+              "type": "GenderType"
+            }
+          ],
+          "samples": [
+            "{gender}",
+            "I am {gender}",
+            "I am a {gender}",
+            "I'm {gender}",
+            "I'm a {gender}",
+            "my gender is {gender}",
+            "gender is {gender}",
+            "gender {gender}",
+            "it's {gender}",
+            "it is {gender}"
+          ]
+        },
+        {
+          "name": "NumberIntent",
+          "slots": [
+            {
+              "name": "number",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{number}",
+            "number {number}",
+            "option {number}",
+            "choose {number}",
+            "choose number {number}",
+            "select {number}",
+            "select number {number}",
+            "pick {number}",
+            "pick number {number}",
+            "the {number}",
+            "I am {number}",
+            "I'm {number}",
+            "I am {number} years old",
+            "I'm {number} years old",
+            "{number} years",
+            "{number} years old",
+            "my age is {number}",
+            "age is {number}",
+            "age {number}",
+            "tell me about number {number}",
+            "documents for number {number}"
+          ]
+        },
+        {
+          "name": "IncomeIntent",
+          "slots": [
+            {
+              "name": "amount",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "decimal",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "unit",
+              "type": "IncomeUnitType"
+            }
+          ],
+          "samples": [
+            "{amount} {unit}",
+            "{amount} point {decimal} {unit}",
+            "{amount} point {decimal}",
+            "about {amount} {unit}",
+            "around {amount} {unit}",
+            "about {amount} point {decimal} {unit}",
+            "my family income is {amount} {unit}",
+            "my family income is {amount} point {decimal} {unit}",
+            "my family income is {amount}",
+            "our income is {amount} {unit}",
+            "our family income is {amount} {unit}",
+            "family income is {amount} {unit}",
+            "family income {amount} {unit}",
+            "income is {amount} {unit}",
+            "income is {amount} point {decimal} {unit}",
+            "income {amount} {unit}",
+            "the income is {amount} {unit}",
+            "we earn {amount} {unit}",
+            "we earn {amount} point {decimal} {unit}",
+            "my parents earn {amount} {unit}",
+            "{amount} {unit} per year",
+            "{amount} {unit} a year",
+            "{amount} {unit} yearly",
+            "it's {amount} {unit}",
+            "it is {amount} {unit}"
+          ]
+        },
+        {
+          "name": "CategoryIntent",
+          "slots": [
+            {
+              "name": "category",
+              "type": "CategoryType"
+            }
+          ],
+          "samples": [
+            "{category}",
+            "tell me {category}",
+            "tell me the {category}",
+            "list {category}",
+            "list the {category}",
+            "show {category}",
+            "show me {category}",
+            "read {category}",
+            "read the {category}",
+            "find {category}",
+            "find {category} for me",
+            "find me {category}",
+            "search {category}",
+            "I want {category}",
+            "I want to hear {category}",
+            "{category} please",
+            "which {category} am I eligible for",
+            "what {category} am I eligible for",
+            "which {category} can I get",
+            "what {category} can I get",
+            "am I eligible for any {category}",
+            "hear {category}",
+            "go to {category}",
+            "back to {category}"
+          ]
+        },
+        {
+          "name": "MoreIntent",
+          "slots": [],
+          "samples": [
+            "more",
+            "more options",
+            "show more",
+            "read more",
+            "tell me more options",
+            "next ones",
+            "the next ones",
+            "continue",
+            "what else",
+            "any more",
+            "go on",
+            "keep going"
+          ]
+        },
+        {
+          "name": "SelectIntent",
+          "slots": [
+            {
+              "name": "opportunity",
+              "type": "OpportunityType"
+            }
+          ],
+          "samples": [
+            "{opportunity}",
+            "tell me about {opportunity}",
+            "what about {opportunity}",
+            "details of {opportunity}",
+            "documents for {opportunity}",
+            "what documents do I need for {opportunity}",
+            "which documents do I need for {opportunity}",
+            "required documents for {opportunity}",
+            "select {opportunity}",
+            "choose {opportunity}",
+            "I want {opportunity}",
+            "I choose {opportunity}",
+            "I want to apply for {opportunity}",
+            "am I eligible for {opportunity}",
+            "check {opportunity}",
+            "open {opportunity}"
+          ]
+        },
+        {
+          "name": "DocumentsIntent",
+          "slots": [],
+          "samples": [
+            "documents",
+            "what documents do I need",
+            "which documents do I need",
+            "which documents are required",
+            "what documents are required",
+            "required documents",
+            "list the documents",
+            "tell me the documents",
+            "repeat the documents",
+            "documents list",
+            "what papers do I need",
+            "what do I need"
+          ]
+        },
+        {
+          "name": "MissingDocIntent",
+          "slots": [
+            {
+              "name": "document",
+              "type": "DocumentType"
+            }
+          ],
+          "samples": [
+            "{document}",
+            "I don't have {document}",
+            "I don't have my {document}",
+            "I don't have the {document}",
+            "I don't have a {document}",
+            "I do not have {document}",
+            "I do not have my {document}",
+            "{document} is missing",
+            "my {document} is missing",
+            "missing {document}",
+            "I lost my {document}",
+            "how do I get {document}",
+            "how do I get a {document}",
+            "how do I get my {document}",
+            "how to get {document}",
+            "how can I get {document}",
+            "how can I get a {document}",
+            "where do I get {document}",
+            "how do I make {document}",
+            "how to make {document}",
+            "I need {document}",
+            "I need a {document}",
+            "I need to get {document}",
+            "I don't have it",
+            "I don't have one",
+            "one is missing",
+            "some are missing",
+            "something is missing",
+            "a document is missing",
+            "I'm missing a document"
+          ]
+        },
+        {
+          "name": "HaveAllIntent",
+          "slots": [],
+          "samples": [
+            "I have all of them",
+            "I have all",
+            "I have everything",
+            "I have all the documents",
+            "I have them all",
+            "all of them",
+            "everything is there",
+            "I have got everything",
+            "nothing is missing",
+            "none are missing",
+            "no other document",
+            "that's all",
+            "that is all",
+            "nothing else is missing"
+          ]
+        },
+        {
+          "name": "ApplyIntent",
+          "slots": [
+            {
+              "name": "opportunity",
+              "type": "OpportunityType"
+            }
+          ],
+          "samples": [
+            "how do I apply",
+            "how to apply",
+            "how can I apply",
+            "where do I apply",
+            "steps to apply",
+            "application steps",
+            "how do I apply for {opportunity}",
+            "how to apply for {opportunity}",
+            "how can I apply for {opportunity}",
+            "where do I apply for {opportunity}",
+            "give me the link",
+            "send me the link",
+            "what is the website",
+            "official link",
+            "official website",
+            "apply now"
+          ]
+        },
+        {
+          "name": "WhyNotIntent",
+          "slots": [],
+          "samples": [
+            "why am I not eligible",
+            "which ones am I not eligible for",
+            "what am I not eligible for",
+            "why not",
+            "why can't I apply",
+            "why not eligible",
+            "not eligible list",
+            "where am I not eligible",
+            "tell me what I'm not eligible for"
+          ]
+        },
+        {
+          "name": "RestartIntent",
+          "slots": [],
+          "samples": [
+            "start over",
+            "restart",
+            "start again",
+            "begin again",
+            "reset",
+            "new search",
+            "change my details",
+            "change my answers",
+            "change my age",
+            "change my income",
+            "change my gender",
+            "change my profile",
+            "I want to change my answers"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "GenderType",
+          "values": [
+            {
+              "id": "female",
+              "name": {
+                "value": "female",
+                "synonyms": [
+                  "girl",
+                  "woman",
+                  "lady",
+                  "women",
+                  "mahila",
+                  "ladki",
+                  "a girl",
+                  "a woman"
+                ]
+              }
+            },
+            {
+              "id": "male",
+              "name": {
+                "value": "male",
+                "synonyms": [
+                  "boy",
+                  "man",
+                  "gentleman",
+                  "ladka",
+                  "purush",
+                  "a boy",
+                  "a man"
+                ]
+              }
+            },
+            {
+              "id": "other",
+              "name": {
+                "value": "other",
+                "synonyms": [
+                  "transgender",
+                  "non binary",
+                  "third gender",
+                  "prefer not to say",
+                  "i don't want to say"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "CategoryType",
+          "values": [
+            {
+              "id": "scheme",
+              "name": {
+                "value": "schemes",
+                "synonyms": [
+                  "scheme",
+                  "government schemes",
+                  "government scheme",
+                  "scholarships",
+                  "scholarship",
+                  "yojana",
+                  "yojanas",
+                  "sarkari yojana",
+                  "benefits",
+                  "government benefits"
+                ]
+              }
+            },
+            {
+              "id": "internship",
+              "name": {
+                "value": "internships",
+                "synonyms": [
+                  "internship",
+                  "interns",
+                  "intern",
+                  "training",
+                  "apprenticeships"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "IncomeUnitType",
+          "values": [
+            {
+              "id": "lakh",
+              "name": {
+                "value": "lakh",
+                "synonyms": [
+                  "lakhs",
+                  "lac",
+                  "lacs",
+                  "lakh rupees",
+                  "lakhs rupees",
+                  "lakh per year",
+                  "lakh per annum",
+                  "lakh a year",
+                  "lakh yearly",
+                  "l p a"
+                ]
+              }
+            },
+            {
+              "id": "thousand",
+              "name": {
+                "value": "thousand",
+                "synonyms": [
+                  "thousand rupees",
+                  "k"
+                ]
+              }
+            },
+            {
+              "id": "crore",
+              "name": {
+                "value": "crore",
+                "synonyms": [
+                  "crores",
+                  "crore rupees"
+                ]
+              }
+            },
+            {
+              "id": "rupees",
+              "name": {
+                "value": "rupees",
+                "synonyms": [
+                  "rupee",
+                  "rs",
+                  "rupees per year",
+                  "rupees a year"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "OpportunityType",
+          "values": [
+            {
+              "id": "csss",
+              "name": {
+                "value": "central sector scholarship",
+                "synonyms": [
+                  "central sector scheme",
+                  "central sector scheme of scholarship",
+                  "central scholarship",
+                  "national scholarship",
+                  "n s p scholarship"
+                ]
+              }
+            },
+            {
+              "id": "pragati",
+              "name": {
+                "value": "pragati",
+                "synonyms": [
+                  "pragati scholarship",
+                  "aicte pragati",
+                  "a i c t e pragati",
+                  "scholarship for girls",
+                  "girls scholarship"
+                ]
+              }
+            },
+            {
+              "id": "vidyalaxmi",
+              "name": {
+                "value": "vidyalaxmi",
+                "synonyms": [
+                  "vidya laxmi",
+                  "vidya lakshmi",
+                  "pm vidyalaxmi",
+                  "education loan",
+                  "student loan"
+                ]
+              }
+            },
+            {
+              "id": "apy",
+              "name": {
+                "value": "atal pension",
+                "synonyms": [
+                  "atal pension yojana",
+                  "a p y",
+                  "pension scheme",
+                  "pension yojana"
+                ]
+              }
+            },
+            {
+              "id": "pmjjby",
+              "name": {
+                "value": "jeevan jyoti",
+                "synonyms": [
+                  "jeevan jyoti bima",
+                  "jeevan jyoti bima yojana",
+                  "life insurance",
+                  "p m j j b y"
+                ]
+              }
+            },
+            {
+              "id": "pmsby",
+              "name": {
+                "value": "suraksha bima",
+                "synonyms": [
+                  "suraksha bima yojana",
+                  "accident insurance",
+                  "p m s b y"
+                ]
+              }
+            },
+            {
+              "id": "standup",
+              "name": {
+                "value": "stand up india",
+                "synonyms": [
+                  "standup india",
+                  "stand up",
+                  "business loan",
+                  "startup loan"
+                ]
+              }
+            },
+            {
+              "id": "pmis",
+              "name": {
+                "value": "pm internship",
+                "synonyms": [
+                  "p m internship",
+                  "pm internship scheme",
+                  "prime minister internship",
+                  "prime minister's internship",
+                  "prime minister internship scheme"
+                ]
+              }
+            },
+            {
+              "id": "niti",
+              "name": {
+                "value": "niti aayog",
+                "synonyms": [
+                  "niti aayog internship",
+                  "niti internship",
+                  "neeti aayog"
+                ]
+              }
+            },
+            {
+              "id": "apprentice",
+              "name": {
+                "value": "apprenticeship india",
+                "synonyms": [
+                  "apprenticeship",
+                  "apprentice",
+                  "naps"
+                ]
+              }
+            },
+            {
+              "id": "sample_frontend",
+              "name": {
+                "value": "frontend developer intern",
+                "synonyms": [
+                  "frontend intern",
+                  "frontend internship",
+                  "front end developer",
+                  "frontend developer"
+                ]
+              }
+            },
+            {
+              "id": "sample_data",
+              "name": {
+                "value": "data analytics intern",
+                "synonyms": [
+                  "data analytics",
+                  "data analytics internship",
+                  "data internship",
+                  "data analyst intern"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "DocumentType",
+          "values": [
+            {
+              "id": "aadhaar",
+              "name": {
+                "value": "aadhaar card",
+                "synonyms": [
+                  "aadhaar",
+                  "aadhar",
+                  "aadhar card",
+                  "adhaar",
+                  "uid card"
+                ]
+              }
+            },
+            {
+              "id": "pan",
+              "name": {
+                "value": "pan card",
+                "synonyms": [
+                  "pan",
+                  "p a n card",
+                  "permanent account number"
+                ]
+              }
+            },
+            {
+              "id": "bank_aadhaar",
+              "name": {
+                "value": "bank account linked with aadhaar",
+                "synonyms": [
+                  "aadhaar linked bank account",
+                  "aadhaar seeded bank account",
+                  "seeded bank account",
+                  "bank account with aadhaar"
+                ]
+              }
+            },
+            {
+              "id": "bank_account",
+              "name": {
+                "value": "bank account",
+                "synonyms": [
+                  "savings account",
+                  "post office account",
+                  "bank passbook",
+                  "passbook"
+                ]
+              }
+            },
+            {
+              "id": "income_cert",
+              "name": {
+                "value": "income certificate",
+                "synonyms": [
+                  "family income certificate",
+                  "income proof",
+                  "income document"
+                ]
+              }
+            },
+            {
+              "id": "caste_cert",
+              "name": {
+                "value": "caste certificate",
+                "synonyms": [
+                  "caste",
+                  "community certificate",
+                  "s c certificate",
+                  "s t certificate"
+                ]
+              }
+            },
+            {
+              "id": "marksheet_10",
+              "name": {
+                "value": "tenth marksheet",
+                "synonyms": [
+                  "class ten marksheet",
+                  "tenth class marksheet",
+                  "ssc marksheet",
+                  "tenth certificate",
+                  "matric marksheet"
+                ]
+              }
+            },
+            {
+              "id": "marksheet_12",
+              "name": {
+                "value": "twelfth marksheet",
+                "synonyms": [
+                  "class twelve marksheet",
+                  "twelfth class marksheet",
+                  "intermediate marksheet",
+                  "inter marksheet",
+                  "twelfth certificate",
+                  "hsc marksheet"
+                ]
+              }
+            },
+            {
+              "id": "edu_cert",
+              "name": {
+                "value": "education certificate",
+                "synonyms": [
+                  "qualification certificate",
+                  "degree certificate",
+                  "diploma certificate",
+                  "educational certificate",
+                  "marksheet",
+                  "marks card"
+                ]
+              }
+            },
+            {
+              "id": "latest_marksheet",
+              "name": {
+                "value": "latest marksheet",
+                "synonyms": [
+                  "semester marksheet",
+                  "transcript",
+                  "college marksheet"
+                ]
+              }
+            },
+            {
+              "id": "bonafide",
+              "name": {
+                "value": "bonafide certificate",
+                "synonyms": [
+                  "bonafide",
+                  "study certificate",
+                  "student certificate"
+                ]
+              }
+            },
+            {
+              "id": "admission_letter",
+              "name": {
+                "value": "admission letter",
+                "synonyms": [
+                  "admission proof",
+                  "allotment letter",
+                  "offer letter from college"
+                ]
+              }
+            },
+            {
+              "id": "fee_receipt",
+              "name": {
+                "value": "fee receipt",
+                "synonyms": [
+                  "fee structure",
+                  "fees receipt",
+                  "tuition fee receipt"
+                ]
+              }
+            },
+            {
+              "id": "noc",
+              "name": {
+                "value": "noc",
+                "synonyms": [
+                  "n o c",
+                  "no objection certificate",
+                  "college noc"
+                ]
+              }
+            },
+            {
+              "id": "resume",
+              "name": {
+                "value": "resume",
+                "synonyms": [
+                  "cv",
+                  "c v",
+                  "biodata"
+                ]
+              }
+            },
+            {
+              "id": "photo",
+              "name": {
+                "value": "photo",
+                "synonyms": [
+                  "photograph",
+                  "passport photo",
+                  "passport size photo"
+                ]
+              }
+            },
+            {
+              "id": "mobile",
+              "name": {
+                "value": "mobile number",
+                "synonyms": [
+                  "phone number",
+                  "linked mobile number"
+                ]
+              }
+            },
+            {
+              "id": "consent_form",
+              "name": {
+                "value": "consent form",
+                "synonyms": [
+                  "declaration form",
+                  "enrolment form",
+                  "enrollment form"
+                ]
+              }
+            },
+            {
+              "id": "nominee",
+              "name": {
+                "value": "nominee",
+                "synonyms": [
+                  "nominee details"
+                ]
+              }
+            },
+            {
+              "id": "address_proof",
+              "name": {
+                "value": "address proof",
+                "synonyms": [
+                  "proof of address",
+                  "residence proof"
+                ]
+              }
+            },
+            {
+              "id": "project_report",
+              "name": {
+                "value": "project report",
+                "synonyms": [
+                  "business plan",
+                  "business proposal"
+                ]
+              }
+            },
+            {
+              "id": "premises_proof",
+              "name": {
+                "value": "rent agreement",
+                "synonyms": [
+                  "premises proof",
+                  "shop proof",
+                  "office proof"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
